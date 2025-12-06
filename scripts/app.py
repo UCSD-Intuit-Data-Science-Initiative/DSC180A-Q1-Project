@@ -273,17 +273,17 @@ def main():
     st.title("📊 Erlang-C Workforce Optimization Dashboard")
 
     # --- Sidebar: data paths + cost ---
-    st.sidebar.header("Data & Cost Settings")
     daily_path = st.sidebar.text_input(
         "Daily dataset path",
-        value="call-center-data-v3-daily.csv",
+        value="data/raw/call-center-data-v3-daily.csv",
         key="sb_daily_path",
     )
     intraday_path = st.sidebar.text_input(
         "Intraday dataset path",
-        value="intraday-profiles.csv",
+        value="data/raw/intraday-profiles.csv",
         key="sb_intraday_path",
     )
+
 
     hourly_wage = st.sidebar.number_input(
         "Hourly wage per agent ($)",

@@ -13,6 +13,7 @@ On the supply planning side, the challenge is about optimization under constrain
 ```bash
 git clone <repo>
 cd <repo>
+streamlit run scripts/app.py # locally run the staffing dashboard
 make install        # installs dependencies & pre-commit hooks
 make lint           # sanity-check tooling
 make test           # run the sample unit tests
@@ -20,6 +21,8 @@ make pipeline-run   # execute the demo training pipeline
 ```
 
 Poetry 1.8+ is required. If Poetry is not already installed, follow the [official instructions](https://python-poetry.org/docs/#installation).
+
+To run Streamlit locally, you need to install Streamlit by opening your terminal or command prompt and running: `pip install streamlit`.
 
 ## Repository Layout
 
@@ -61,3 +64,4 @@ Poetry 1.8+ is required. If Poetry is not already installed, follow the [officia
 - **Loguru** – opinionated logging with contextual helpers.
 - **Pre-commit** – consistent formatting & linting before commits.
 - **GitHub Pages ready docs** – `docs/` contains the scaffolding for project documentation.
+- **Streamlit** - Python framework for interactive data app hosting.
